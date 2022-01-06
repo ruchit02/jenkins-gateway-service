@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: mysql-env-vars
+    namespace: e7fd-exploring-openshift
+data:
+    MYSQL_USER: root
+    MYSQL_PASSWORD: root

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: gateway-env-vars
+    namespace: e7fd-exploring-openshift
+data:
+    GATEWAY_SERVICE_HOST: "192.168.99.100"
+    GATEWAY_SERVICE_PORT: "30005"
+    

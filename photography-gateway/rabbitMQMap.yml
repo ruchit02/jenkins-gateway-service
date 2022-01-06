@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: rabbitmq-env-vars
+    namespace: e7fd-exploring-openshift
+data:
+    BROKER_HOST: "10.100.12.42"
+    BROKER_PORT: "5672"

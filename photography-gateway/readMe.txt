@@ -1,0 +1,8 @@
+docker run -p 8081:8081 \
+--network proj-net \
+--name gateway-service \
+-e BROKER_HOST=192.168.99.100 -e BROKER_PORT=5672 \
+-e TRANSFER_PROTOCOL=http \
+-e AUTH_SERVICE_HOST=192.168.99.100 -e AUTH_SERVICE_PORT=8080 \
+-e DOC_SERVICE_HOST=192.168.99.100 -e DOC_SERVICE_PORT=8082 \
+gateway-image
